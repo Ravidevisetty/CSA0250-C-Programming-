@@ -1,0 +1,31 @@
+#include<stdio.h>
+struct employee
+{
+  int id, age, salary;
+  char name[30], designation[30], department[30];
+};
+int main()
+{
+  struct employee e;
+  printf("enter the id of the employee:");
+  scanf("%d", &e.id);
+  printf("enter the age of the employee:");
+  scanf("%d", &e.age);
+  printf("enter the name of the employee:");
+  getchar();
+  fgets(e.name, 30, stdin);
+  printf("enter the designation of the employee:");
+  fgets(e.designation, 30, stdin);
+  printf("enter the department of the employee:");
+  fgets(e.department, 30, stdin);
+  printf("enter the salary of the employee:");
+  scanf("%d", &e.salary);
+  printf("\n employee details:\n");
+  printf("employee id: %d\n", e.id);
+  printf("employee name: %s", e.name);
+  printf("employee age: %d\n", e.age);
+  printf("employee designation: %s", e.destination);
+  printf("employee department: %s", e.department);
+  printf("employee salary: %d\n", e.salary);
+  return 0;;
+}
